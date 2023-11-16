@@ -1,4 +1,4 @@
-import { ProductRepository, productRepository } from "../infrastructure/ProductRepository";
+import { ProductRepository } from "../../infrastructure/ProductRepository";
 
 export class GetProductUseCase {
   constructor(private productRepository: ProductRepository) {}  
@@ -8,6 +8,3 @@ export class GetProductUseCase {
     console.log(product)
   }
 }
-
-const getProductUseCase = new GetProductUseCase(productRepository)
-getProductUseCase.execute(1)
